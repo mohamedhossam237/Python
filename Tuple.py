@@ -21,3 +21,17 @@ l[1]="java"
 t = tuple(l)
 
 print(t)
+
+#Unpacking a Tuple
+
+(x,y,z) = ts
+
+print(x)
+print(y)
+print(z)
+
+#Join Two Tuples
+
+tj = ts + ti
+
+print(tj)
