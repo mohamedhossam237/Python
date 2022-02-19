@@ -14,8 +14,11 @@ t = ("python", "c++",5,4,3)
 print (t[1])
 print (t[1:3])
 
+#add 
+t.append(8)
 
-#update tuple
+
+#update tuple for remove we have to do the same 
 l = list(t)
 l[1]="java"
 t = tuple(l)
