@@ -35,3 +35,9 @@ print(z)
 tj = ts + ti
 
 print(tj)
+
+#Multiply Tuples
+
+tm = ti*2
+
+print(tm)
