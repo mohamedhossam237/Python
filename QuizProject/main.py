@@ -1,0 +1,1 @@
+from data import question_datafrom question_model import QuestionQuestionBank = []for question in question_data:    question_text = question["text"]    question_answer = question["answer"]    new_Q = Question(question_text,question_answer)    QuestionBank.append(new_Q)    print(QuestionBank[0].answer)
