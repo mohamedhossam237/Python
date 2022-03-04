@@ -13,4 +13,3 @@ root.childleft.childright.childright = Node(7)
 root.childleft.childright.childleft = Node(4)
 root.childright.childright = Node(14)
 root.childright.childright.childleft = Node(13)
-
