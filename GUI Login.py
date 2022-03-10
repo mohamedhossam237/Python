@@ -1,4 +1,9 @@
 from tkinter import *
+global main_screen
+global username
+global password
+global username_entry
+global password_entry
 def main_account_screen():
     
     main_screen = Tk()    
@@ -6,19 +11,19 @@ def main_account_screen():
     main_screen.title("Account Login") 
  
  
-Label(text="Choose Login Or Register", bg="blue", width="300", height="2", font=("Calibri", 13)).pack() 
-Label(text="").pack() 
+    Label(text="Choose Login Or Register", bg="blue", width="300", height="2", font=("Calibri", 13)).pack() 
+    Label(text="").pack() 
  
 
-Button(text="Login", height="2", width="30").pack() 
-Label(text="").pack() 
+    Button(text="Login", height="2", width="30").pack() 
+    Label(text="").pack() 
  
 
-Button(text="Register", height="2", width="30").pack()
+    Button(text="Register", height="2", width="30").pack()
  
-main_screen.mainloop() 
+    main_screen.mainloop() 
  
-main_account_screen() 
+    main_account_screen() 
 def register():
  
     
@@ -49,10 +54,10 @@ def register():
     
     Button(register_screen, text="Register", width=10, height=1, bg="blue").pack()
  
-global main_screen
+
  
  
-Button(text="Register", height="2", width="30", command=register).pack()
+    Button(text="Register", height="2", width="30", command=register).pack()
 def register_user():
  
     username_info = username.get()
@@ -68,10 +73,6 @@ def register_user():
     password_entry.delete(0, END)
  
     
-Label(register_screen, text="Registration Success", fg="green", font=("calibri", 11)).pack()
-global username
-global password
-global username_entry
-global password_entry
-Button(register_screen, text="Register", width=10, height=1, bg="blue", command = register_user).pack()
+    Label(register_screen, text="Registration Success", fg="green", font=("calibri", 11)).pack()
+    Button(register_screen, text="Register", width=10, height=1, bg="blue", command = register_user).pack()
  
